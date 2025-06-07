@@ -19,4 +19,8 @@
 		<PackageReference Include="System.Text.Encodings.Web" Version="9.0.5" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <ProjectReference Include="..\Submodules\Med8r\src\Med8r\Med8r.csproj" />
+	</ItemGroup>
+
 </Project>

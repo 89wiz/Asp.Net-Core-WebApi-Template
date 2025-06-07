@@ -5,6 +5,10 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiTemplate", "ApiTemplate\ApiTemplate.csproj", "{DBEAC9A8-0C73-4819-A40D-57FD0757C3C6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Submodules", "Submodules", "{AB07E62D-1F52-4BFD-93E8-ADBA68DC8AFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Med8r", "Submodules\Med8r\src\Med8r\Med8r.csproj", "{A279D574-61FD-4F30-B10A-D9CD35CE83A6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +19,15 @@ Global
 		{DBEAC9A8-0C73-4819-A40D-57FD0757C3C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBEAC9A8-0C73-4819-A40D-57FD0757C3C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DBEAC9A8-0C73-4819-A40D-57FD0757C3C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A279D574-61FD-4F30-B10A-D9CD35CE83A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A279D574-61FD-4F30-B10A-D9CD35CE83A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A279D574-61FD-4F30-B10A-D9CD35CE83A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A279D574-61FD-4F30-B10A-D9CD35CE83A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A279D574-61FD-4F30-B10A-D9CD35CE83A6} = {AB07E62D-1F52-4BFD-93E8-ADBA68DC8AFF}
 	EndGlobalSection
 EndGlobal

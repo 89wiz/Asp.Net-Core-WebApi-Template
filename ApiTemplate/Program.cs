@@ -3,6 +3,7 @@ using ApiTemplate.Config.IoC;
 using ApiTemplate.Context;
 using ApiTemplate.Services.Auth;
 using ApiTemplate.Services.Files;
+using Med8r;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -73,6 +74,7 @@ services
     .AddEntityFrameworkStores<ApiContext>();
 
 services.AddSingleton<ICsvService, CsvService>();
+services.AddMed8r();
 
 var app = builder.Build();
 
