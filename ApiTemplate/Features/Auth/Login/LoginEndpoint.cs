@@ -11,6 +11,6 @@ public class LoginEndpoint : IEndpoint
         {
             var response = await med8R.Send(request);
             return Results.Ok(response);
-        }).AllowAnonymous();
+        }).Produces<LoginResponse>(200).AllowAnonymous();
     }
 }
