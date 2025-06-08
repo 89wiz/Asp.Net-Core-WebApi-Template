@@ -1,4 +1,4 @@
-﻿namespace Retail.Api.Core.Common;
+﻿namespace ApiTemplate.Core.Common;
 
 public struct ErrorOr<T> : IErrorOr
     where T : class?

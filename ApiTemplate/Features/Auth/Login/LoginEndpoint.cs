@@ -1,5 +1,7 @@
-﻿using ApiTemplate.Config.IoC;
-using Med8r;
+﻿using ApiTemplate.Config.Http;
+using ApiTemplate.Config.IoC;
+using ApiTemplate.Core.Common;
+using Mediator;
 
 namespace ApiTemplate.Features.Auth.Login;
 
@@ -7,10 +9,9 @@ public class LoginEndpoint : IEndpoint
 {
     public void Register(WebApplication app)
     {
-        app.MapPost("/login", async (LoginRequest request, IMed8r med8R) =>
-        {
-            var response = await med8R.Send(request);
-            return Results.Ok(response);
-        }).Produces<LoginResponse>(200).AllowAnonymous();
+        app.MapPost("login", static (LoginRequest request, ISender sender) => sender.Send(request).ToResult())
+            .Produces<LoginResponse>(200)
+            .Produces<ErrorMessage>(400)
+            .AllowAnonymous();
     }
 }

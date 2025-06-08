@@ -1,6 +1,6 @@
 ﻿using FluentValidation.Results;
 
-namespace Retail.Api.Core.Common;
+namespace ApiTemplate.Core.Common;
 
 public class ErrorMessage
 {
